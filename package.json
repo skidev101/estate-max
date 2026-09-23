@@ -1,0 +1,34 @@
+{
+  "name": "estate-max",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "start": "turbo run start",
+    "format": "turbo run format",
+    "typecheck": "turbo run typecheck",
+    "dev:api": "turbo run dev --filter=@estate-max/api",
+    "dev:web": "turbo run dev --filter=@estate-max/web",
+    "clean": "turbo run clean",
+    "clean:web": "turbo run clean --filter=@estate-max/web",
+    "dev:clean-start": "turbo run clean --filter=@estate-max/web && turbo run dev --filter=@estate-max/web",
+    "test": "turbo run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.5.2",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "turbo": "^2.11.2"
+  }
+}
