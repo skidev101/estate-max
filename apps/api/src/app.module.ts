@@ -15,7 +15,7 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
       appSecret: 'YOUR_APP_SECRET',
       serviceId: 'api',
     }),
-    UserModule,
+    UserModule
   ],
   controllers: [AppController],
   providers: [AppService],

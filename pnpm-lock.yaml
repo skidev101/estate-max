@@ -213,6 +213,9 @@ importers:
 
   apps/api:
     dependencies:
+      '@estate-max/shared':
+        specifier: workspace:*
+        version: link:../..
       '@nestjs/common':
         specifier: ^12.0.1
         version: 12.0.4(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
@@ -283,6 +286,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@estate-max/shared':
+        specifier: workspace:*
+        version: link:../..
       next:
         specifier: 16.3.5
         version: 16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@20.19.43)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)

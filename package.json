@@ -1,5 +1,5 @@
 {
-  "name": "estate-max",
+  "name": "@estate-max/shared",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,8 @@
     "start": "turbo run start",
     "format": "turbo run format",
     "typecheck": "turbo run typecheck",
-    "dev:api": "turbo run dev --filter=@estate-max/api",
-    "dev:web": "turbo run dev --filter=@estate-max/web",
+    "dev:api": "turbo run dev --filter=api",
+    "dev:web": "turbo run dev --filter=web",
     "clean": "turbo run clean",
     "clean:web": "turbo run clean --filter=@estate-max/web",
     "dev:clean-start": "turbo run clean --filter=@estate-max/web && turbo run dev --filter=@estate-max/web",
