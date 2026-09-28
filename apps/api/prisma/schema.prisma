@@ -1,0 +1,28 @@
+// EstateMax — Prisma schema.
+//
+// No entities are defined yet. This file carries only the generator and
+// datasource so the toolchain can be wired up and verified ahead of the data
+// model work. SCOPE.md §7 defines the 11 entities that will land here.
+//
+// Three Prisma 7 changes shape the rest of this setup:
+//   - `prisma-client` is the Rust-free generator. `prisma-client-js` is on its
+//     way out. `output` is mandatory and the client is no longer emitted into
+//     node_modules.
+//   - The connection URL is no longer here. It lives in ../prisma.config.ts,
+//     so this datasource block declares only the provider.
+//   - Connecting at runtime requires a driver adapter — for Postgres that is
+//     `@prisma/adapter-pg`, which the API declares. The WASM query compiler
+//     under runtime/ builds SQL but cannot reach the database on its own.
+//
+// `output` points into src/ rather than sitting beside this file on purpose:
+// nest builds with rootDir "./src" (see tsconfig.build.json), so a generated
+// client outside that root would fail to compile.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}

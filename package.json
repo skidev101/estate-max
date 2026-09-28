@@ -1,8 +1,10 @@
 {
-  "name": "@estate-max/shared",
+  "name": "estate-max",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "EstateMax Arewa Nigeria — monorepo",
+  "license": "UNLICENSED",
+  "type": "module",
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
@@ -10,16 +12,13 @@
     "start": "turbo run start",
     "format": "turbo run format",
     "typecheck": "turbo run typecheck",
-    "dev:api": "turbo run dev --filter=api",
-    "dev:web": "turbo run dev --filter=web",
+    "test": "turbo run test",
     "clean": "turbo run clean",
+    "dev:api": "turbo run dev --filter=@estate-max/api",
+    "dev:web": "turbo run dev --filter=@estate-max/web",
     "clean:web": "turbo run clean --filter=@estate-max/web",
-    "dev:clean-start": "turbo run clean --filter=@estate-max/web && turbo run dev --filter=@estate-max/web",
-    "test": "turbo run test"
+    "dev:clean-start": "turbo run clean --filter=@estate-max/web && turbo run dev --filter=@estate-max/web"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -27,7 +26,6 @@
       "onFail": "download"
     }
   },
-  "type": "module",
   "devDependencies": {
     "turbo": "^2.11.2"
   }

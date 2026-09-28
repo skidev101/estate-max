@@ -1,0 +1,4 @@
+# Prisma 7 emits the client as TypeScript source into src/generated/prisma.
+# Reformatting generated code is pure churn and buries real diffs.
+src/generated
+dist

@@ -1,0 +1,7 @@
+{
+  "name": "@estate-max/validators",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Validation schemas shared between API DTOs and web forms. No entry point yet, and no validation library chosen — class-validator is already in the API, but sharing schemas with the Next.js forms may argue for zod instead."
+}

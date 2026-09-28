@@ -3,6 +3,9 @@
 /node_modules
 /build
 
+# Prisma 7 emits the client as TypeScript source here (see prisma/schema.prisma)
+/src/generated
+
 # TypeScript build cache
 *.tsbuildinfo
 

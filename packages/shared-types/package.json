@@ -1,0 +1,7 @@
+{
+  "name": "@estate-max/shared-types",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Types shared between @estate-max/api and @estate-max/web. No entry point yet — the surface lands with the data model in SCOPE.md §7."
+}
